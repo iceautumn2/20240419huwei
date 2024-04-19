@@ -50,6 +50,7 @@ function gotResult(error, results) {
   }
   // The results are in an array ordered by confidence.
   // console.log(results[0]);
-  ThunkableWebviewerExtension.postMessage(label);
+
   label = results[0].label;
+  ThunkableWebviewerExtension.postMessage(label);
 }
